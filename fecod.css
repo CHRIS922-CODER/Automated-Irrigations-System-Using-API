@@ -1,0 +1,20 @@
+body{
+	        text-align:center;
+			background-color: gray;
+			background-image: url(odr.jpg);
+			background-size: 50%, 50%;	
+		}
+		h1{
+			text-align: left;
+
+		}
+		p{
+			text-align: left;
+			color: powderblue;
+			font-size: large;
+		}
+		ul li{
+			color: powderblue;
+			font-size: 20px;
+			text-align: left;
+		}

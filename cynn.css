@@ -1,0 +1,139 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: verdana;
+    background: url(odr.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    background: darkslategray;
+    height:80px;
+    width: 100%;
+
+}
+label.logo{
+    color: powderblue;
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin:0 5px;
+}
+nav ul li a{
+    color:powderblue;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;  
+}
+
+nav ul li a:hover{
+    color: white;
+}
+button{
+    background: white;
+    font-size: 20px;
+    color: black;
+}
+button:hover{
+    background-color: aqua;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin:auto;
+    color:white;
+    position: relative; 
+    min-height: calc(100vh- 211px- 58px);
+
+ 
+}
+.content .p{
+    padding: 20px;
+    padding-bottom: 25px;
+    font-family: verdana;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top:9px ;
+    letter-spacing: 2px;
+}
+.inner-footer{
+    margin: auto;
+    padding: 0;
+    background-color: darkslategray;
+}
+.social-links{
+    display: flex;
+
+}
+.social-links ul{
+    padding: 10px;
+    display: flex;
+    width: 300px;
+    height: 80px;
+    margin: auto;
+
+}
+.social-item{
+    list-style: none;
+}
+.social-item a{
+    padding: 10px 20px;
+    font-size: 35px;
+    color: powderblue;
+    transition: all .25s;
+
+}
+.social-item a:hover{
+    color: white;
+}
+.quick-links{
+    display: flex;
+    width: 560px;
+    height: 80px;
+    margin: auto;
+}
+.quick-links ul{
+    display: flex;
+}
+.quick-items{
+    list-style: none;
+}
+.quick-items a{
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 18px;
+    color: powderblue;
+    transition: all .25s;
+}
+.quick-links a:hover{
+    color: white;
+}
+.outer-footer{
+    padding: 10px;
+    text-align: center;
+    color: powderblue;
+    font-size: 18px;
+    background-color: darkslategray;
+}
