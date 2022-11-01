@@ -1,10 +1,14 @@
 
+:root {
+  --text-color:whitesmoke;
+}
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+
 }
 body{
     font-family: verdana;
@@ -14,9 +18,10 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-repeat:no-repeat;
 }
 nav{
-    background: darkslategray;
+    background: #198754;
     height:80px;
     width: 100%;
 
@@ -26,6 +31,7 @@ label.logo{
     font-size: 35px;
     line-height: 80px;
     font-weight: bold;
+    margin-left:20px;
 }
 nav ul{
     float: right;
@@ -37,7 +43,7 @@ nav ul li{
     margin:0 5px;
 }
 nav ul li a{
-    color:powderblue;
+    color:--text-color;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;  
@@ -47,12 +53,15 @@ nav ul li a:hover{
     color: white;
 }
 button{
-    background: white;
+    background: rgba(38, 255, 9,0.6);
     font-size: 20px;
-    color: black;
+    color: var(--text-color);
+    padding:0.5rem;
+    border-radius:10px;
 }
 button:hover{
-    background-color: aqua;
+    background-color: rgb(38, 255, 9);
+    color:white;
 }
 .content{
     width: 1200px;
@@ -61,6 +70,8 @@ button:hover{
     color:white;
     position: relative; 
     min-height: calc(100vh- 211px- 58px);
+    justify-content:center;
+    align-items:center;
 
  
 }
@@ -81,7 +92,8 @@ button:hover{
 .inner-footer{
     margin: auto;
     padding: 0;
-    background-color: darkslategray;
+    background-color:rgb(52, 119, 31);
+    
 }
 .social-links{
     display: flex;
@@ -101,7 +113,7 @@ button:hover{
 .social-item a{
     padding: 10px 20px;
     font-size: 35px;
-    color: powderblue;
+    color: var(--text-color);
     transition: all .25s;
 
 }
@@ -124,7 +136,7 @@ button:hover{
     text-decoration: none;
     padding: 0px 15px;
     font-size: 18px;
-    color: powderblue;
+    color: var(--text-color);
     transition: all .25s;
 }
 .quick-links a:hover{
@@ -133,7 +145,8 @@ button:hover{
 .outer-footer{
     padding: 10px;
     text-align: center;
-    color: powderblue;
+    color: var(--text-color);
     font-size: 18px;
-    background-color: darkslategray;
+    background-color:#198754;
+
 }

@@ -1,0 +1,149 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    font-family:sans-serif;
+    max-height:100vh;
+    
+}
+i{
+    font-size:2.5rem;
+}
+
+body{
+    background-color:rgb(139, 139, 202);
+    color:#fff;
+    
+}
+
+.navbar{
+    width:100%;
+    height:3.5rem;
+    background-color:rgb(51, 51, 207);
+    display:flex;   
+    border-bottom-left-radius: 5px; 
+    border-bottom-right-radius: 5px; 
+    align-items:center;
+}
+.navbar #logo{
+    width:3rem;
+    height:3rem;
+    background-color:whitesmoke;
+    border-radius:10px;
+    justify-content:flex-start;
+    margin-right:5rem;
+}
+.navbar #title{
+    font-size:2.5rem;
+    padding:0 20px;
+    
+}
+.navbar #nav-links{
+    display:flex;
+    column-gap:3rem;
+    margin-right:20px;
+    justify-content:flex-end;
+}
+.navbar #nav-links a{
+    text-decoration:none;
+    font-size:1.5rem;
+    color:antiquewhite;
+}
+
+.dashboard{
+    display:flex;
+    width:100%;
+    height:5rem;
+    background-color:rgb(82, 93, 161);
+    gap:2%;
+    padding:5px;
+}
+.dashboard-left{
+    display:flex;
+    background-color:rgb(44, 44, 165);
+    height:4.5rem;
+    width:40%;
+    border-radius:10px;
+    align-items:center;
+    justify-content:flex-start;
+}
+
+.dashboard-left .logo{
+    margin:0 1rem;
+}
+
+.dashboard-left .title{
+    display:flex;
+    flex-direction:column;
+}
+.dashboard-left .title .big-text{
+    font-size:2rem;
+}
+.dashboard-left .title .small-text{
+  color:rgb(241, 162, 13);
+  font-size:1rem;
+}
+
+.dashboard-right{
+    display:flex;
+    background-color:rgb(40, 40, 146);
+    height:5rem;
+    width:60%;
+    border-radius:10px;
+    align-items:center;
+    margin:auto;
+    
+}
+
+.dashboard-right .sale,.dashboard-right .payment{
+    display:flex;
+    flex-direction:column;
+    margin-left:5px;
+    width:40%;  
+}
+
+.dashboard-right .sale .heading,.dashboard-right .payment .heading{
+    display:flex;
+     gap:9.5rem;   
+}
+
+.dashboard-right .sale .heading h2,.dashboard-right .payment .heading h2{
+    font-style:bold;
+}
+.dashboard-right .sale .heading i,.dashboard-right .payment .heading i{
+    font-size:1.5rem;
+}
+
+.dashboard-right .sale .items,.dashboard-right .payment .items{
+    display:flex;
+    align-items:center;
+
+}
+
+.dashboard-right .sale .items .item{
+    background-color:rgba(240, 15, 64, 0.8);
+    padding:5px;
+    margin:1px;
+    border-radius:4px;
+    font-size:15px;
+    padding-right:1rem;
+    justify-content:flex-start;
+}
+
+.dashboard-right .payment .items .item{
+    background-color:rgba(240, 15, 64, 0.8);
+    padding:5px;
+    margin:1px;
+    border-radius:4px;
+    font-size:15px;
+    padding-right:6rem;
+    justify-content:flex-start;
+}
+.dashboard-right .logo{
+    height:3rem;
+     width:20%;
+    justify-content:flex-end;
+    
+}
+
+
