@@ -6,15 +6,16 @@ if(process.env.NODE_ENV !== 'production'){
 const express = require('express');
 const app = express();
 const indexRouter = require("./routes/index");
-const mongoose = require('mongoose');
+const bodyParser = require("body-parser");
 
-mongoose.connect("mongodb://localhost/autodb",{useNewUrlParser:true});
-const db = mongoose.connection
-db.on('error',error => console.error(error))
-db.once('open',()=> console.log('Connected to Mongoose'));
+
+
 
 
 // MIDDLEWARES
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 app.set('view engine','ejs');
 app.set('views',__dirname +"/views");
 app.use('/',indexRouter);

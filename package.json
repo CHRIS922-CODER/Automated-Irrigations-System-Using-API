@@ -19,10 +19,12 @@
   "homepage": "https://github.com/Orcha274/IN16-00033-20#readme",
   "description": "",
   "dependencies": {
+    "body-parser": "^1.20.1",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "mongoose": "^6.7.0"
+    "mongoose": "^6.7.0",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
