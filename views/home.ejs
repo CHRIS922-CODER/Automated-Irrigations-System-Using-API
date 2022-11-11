@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Irrigation System</title>
+    <link rel="stylesheet" href="home.css" type="text/css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+        crossorigin=""/>
+
+         <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+ integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+ crossorigin=""></script>
+</head>
+<body>
+
+    <!--   start of navigation bar   -->
+    <nav class="navbar">
+        <div id="logo">
+            <img src="">
+        </div>
+
+        <div id="title">
+           <h1 id="title">Automated Irrigation System</h1>
+        </div>
+
+        <div id="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+
+    </nav>
+    <!--  end of navigation bar -->
+    
+            <!-- start of the section one -->
+            <div  class="dashboard">
+                
+                <div class="dashboard-left">
+
+                    <div class="logo">
+                       <i>📊</i>
+                    </div>
+
+                    <div class="title">
+                        <h1 class="big-text">DASHBOARD</h1>
+                        <p class="small-text">FARMER'S AREA</p>
+                    </div>
+
+                </div>
+                
+
+                <div class="dashboard-right">
+                    <div class="sale">
+                        <div class="heading">
+                          <h4>Type of Crop</h4>
+                          <i class="searchIcon">🔍</i>
+                        </div>
+                        <div class="items">
+                            <div class="item"><p>Maize</p></div>
+                            <div class="item"><p>Rice</p></div>
+                            <div class="item"><p>Sugarcane</p></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="payment">
+
+                        <div class="heading">
+                            <h4>Weather</h4>
+                            <i class="searchIcon">💲</i>
+                          </div>
+                          <div class="items">
+                              <div class="item">Today</div>
+                              <div class="item">Tomorrow</div>
+                          </div>
+                    </div>
+
+                    <div class="logo">
+                        <img src="" alt="Farmer's profile">
+                    </div>
+
+                </div>
+
+            </div>
+        <!-- end of section one -->
+        <div class="main">
+            <!-- start of section two -->
+            <div  class="left-bar">
+
+                <div class="left-bar1">
+                    <div class="year-title">
+                        <h2>Modes</h2>
+                        <i class="searchIcon">🔍</i>
+                      </div>
+
+                      <div class="years">
+                        <div class="year">positive</div>
+                        <div class="year">negative</div>
+                      </div>
+
+                </div>
+
+                <div class="left-bar2">
+
+                    <div class="year-title">
+                        <h3>Notification</h3>
+                        <i class="searchIcon">🔍</i>
+                      </div>
+
+                      <div class="items">
+                        <div class="item">employee mode</div>
+                        <div class="item">admin mode</div>
+                        <div class="item">Time of irrigation</div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                      </div>
+
+                </div>
+
+                <div class="circular">
+                    <i>🛒</i>
+                </div>
+
+            </div>
+                <!-- end of section two -->
+
+            <!-- start of section three -->
+            <div  class="center-bar">
+
+                <div class="center-up">
+       
+                    <div class="center-bar1">
+                           <h3>Temperature</h3>
+                           <div class="item">
+                              <span>$3,32,372</span>
+                           </div>
+                    </div>
+       
+                    <div class="center-bar1">
+       
+                        <h3>Humidity</h3>
+                        <div class="item">
+                           <span>$3,32,372</span>
+                        </div>
+                    </div>
+       
+                    <div class="center-bar1">
+                        <h3>Soil-moisture</h3>
+                        <div class="item">
+                           <span>$3,32,372</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center-center">
+                    <div class="item1">
+                        <div class="heading">
+                            <i>📆</i>
+                            <p>Amount of water needed</p>
+                        </div>
+
+                        <div class="content">
+                            <span>250mm</span>
+                            
+                        </div>
+
+
+                    </div>
+
+                    <div class="item1">
+                        <div class="heading">
+                            <i>📆</i>
+                            <p>Average Temperature</p>
+                        </div>
+
+                        <div class="content">
+
+                            <span>250mm</span>
+                            
+                        </div>
+
+
+                    </div>
+
+                    <div class="item1">
+                        <div class="heading">
+                            <i>📆</i>
+                            <p>average soil-moisture</p>
+                        </div>
+                        <div class="content">
+                            <span>250mm</span>
+                            
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="center-down">
+
+                    <div class="item1">
+                        <div class="heading">
+                            <i>📆</i>
+                            <p> Daily Graph analysis between crop performance against irrigation mode</p>
+                        </div>
+                        <div class="content">
+                            
+                        </div>
+
+
+                    </div>
+
+                    <div class="item2">
+                        <div class="heading">
+                            <i>📆</i>
+                            <h3>PRODUCT</h3>
+                        </div>
+                        <div class="content">
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+                <!-- end of section three -->
+
+            <!-- start of section four -->
+
+
+            <div  class="right-bar">
+                <div class="item1">  
+                    <div class="heading">
+                        <i>📆</i>
+                        <h3>Favorable-conditions</h3>
+                    </div>
+
+                    <div class="content"></div>
+
+                </div>
+
+                <div class="item2">
+                    <div class="heading">
+                        <h3>Geographic Location</h3>
+                    </div>
+
+                    <div id="map">   
+
+                    </div>
+
+                </div>
+                
+                
+
+            </div>
+
+                <!-- end of the section -->
+        </div>
+
+    
+<script src="app.js"></script>
+</body>
+</html>

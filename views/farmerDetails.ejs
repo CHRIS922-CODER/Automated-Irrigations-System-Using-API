@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>REGISTER</title>
+        <link rel="stylesheet" type="text/css" href="farmerDetails.css">
+        </head>
+        <body>
+                <div class="regform"><h1>Registration Form</h1></div>
+                <div class="main">
+                <form action="/farmerDetails" method="post" >
+                        <div id="name">
+                                <h2 class="name">Name</h2>
+                                <input class="firstname" type="text" name="first_name"><br>
+                                <label class="firstlabel">first name</label>
+                                <input class="lastname" type="text" name="last_name">
+                                <label class="firstlabel">last name</label>
+                        </div>
+                        <h2 class="name">Farm Size</h2>
+                        <input class="institution" type="text" name="farmSize">
+                        <h2 class="name">Email</h2>
+                        <input class="email" type="text" name="email">
+
+                        <h2 class="phone-number">Phone Number</h2>
+                        <input class="number" type="text" name="phone">
+                        <h2 class="name">Password</h2>
+                        <input class="password" type="text" name="password">
+                        <h2 class="name">Type of irrigation</h2>
+                        <select  class="option" name="irrigationType">
+                                <option disabled="disabled" selected="selected">...choose option</option>
+                                <option>drip</option>
+                                <option>sprinkle</option>
+                                <option>furrow</option>
+                        </select>
+                        <button type="submit">Submit</button>
+                </form>
+        </div>
+        </body>
+</html>
