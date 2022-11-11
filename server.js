@@ -19,16 +19,7 @@ app.use(bodyParser.urlencoded({
 app.set('view engine','ejs');
 app.set('views',__dirname +"/views");
 app.use('/',indexRouter);
-app.use(express.static(__dirname +'../public'));
-
-
-
-
-
-
-
-
-
+app.use(express.static('public'));
 
 
 app.listen(process.env.PORT || 8001,()=>{

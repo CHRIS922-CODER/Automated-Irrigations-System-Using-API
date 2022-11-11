@@ -1,5 +1,5 @@
 {
-  "name": "in16-00033-20",
+  "name": "automated irrigation system",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {

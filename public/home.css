@@ -1,0 +1,335 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    font-family:sans-serif;
+    max-height:100vh;
+    
+}
+i{
+    font-size:1.5rem;
+}
+
+body{
+    background-color:rgb(139, 139, 202);
+    color:#fff;
+    
+}
+
+.navbar{
+    width:100%;
+    height:3.5rem;
+    background-color:rgb(51, 51, 207);
+    display:flex;   
+    border-bottom-left-radius: 5px; 
+    border-bottom-right-radius: 5px; 
+    align-items:center;
+}
+.navbar #logo{
+    width:3rem;
+    height:3rem;
+    background-color:whitesmoke;
+    border-radius:10px;
+    justify-content:flex-start;
+    margin-right:5rem;
+}
+.navbar #title{
+    font-size:2.5rem;
+    padding:0 20px;
+    
+}
+.navbar #nav-links{
+    display:flex;
+    column-gap:3rem;
+    margin-right:20px;
+    justify-content:flex-end;
+}
+.navbar #nav-links a{
+    text-decoration:none;
+    font-size:1.5rem;
+    color:antiquewhite;
+}
+
+.dashboard{
+    display:flex;
+    width:100%;
+    height:5rem;
+    background-color:rgb(82, 93, 161);
+    gap:2%;
+    padding:5px;
+}
+
+.dashboard-left{
+    display:flex;
+    background-color:rgb(44, 44, 165);
+    height:4.5rem;
+    width:40%;
+    border-radius:10px;
+    align-items:center;
+    justify-content:flex-start;
+}
+
+.dashboard-left .logo{
+    margin:0 1rem;
+}
+
+.dashboard-left .title{
+    display:flex;
+    flex-direction:column;
+}
+.dashboard-left .title .big-text{
+    font-size:2rem;
+}
+.dashboard-left .title .small-text{
+  color:rgb(241, 162, 13);
+  font-size:1rem;
+}
+
+.dashboard-right{
+    display:flex;
+    background-color:rgb(40, 40, 146);
+    height:5rem;
+    width:60%;
+    border-radius:10px;
+    align-items:center;
+    margin:auto;
+    
+}
+
+.dashboard-right .sale,.dashboard-right .payment{
+    display:flex;
+    flex-direction:column;
+    margin-left:5px;
+    width:40%;  
+}
+
+.dashboard-right .sale .heading,.dashboard-right .payment .heading{
+    display:flex;
+     gap:9.5rem;   
+}
+
+.dashboard-right .sale .heading h2,.dashboard-right .payment .heading h2{
+    font-style:bold;
+}
+.dashboard-right .sale .heading i,.dashboard-right .payment .heading i{
+    font-size:1.5rem;
+}
+
+.dashboard-right .sale .items,.dashboard-right .payment .items{
+    display:flex;
+    align-items:center;
+
+}
+
+.dashboard-right .sale .items .item{
+    background-color:rgba(240, 15, 64, 0.8);
+    padding:5px;
+    margin:1px;
+    border-radius:4px;
+    font-size:15px;
+    padding-right:1rem;
+    justify-content:flex-start;
+}
+
+.dashboard-right .payment .items .item{
+    background-color:rgba(240, 15, 64, 0.8);
+    padding:5px;
+    margin:1px;
+    border-radius:4px;
+    font-size:15px;
+    padding-right:6rem;
+    justify-content:flex-start;
+}
+.dashboard-right .logo{
+    height:3rem;
+     width:20%;
+    justify-content:flex-end;
+ 
+}
+
+.main{
+    display:flex;
+    flex-direction:row;
+    gap:3rem;
+    justify-content:center;
+    margin-left:20px;
+    margin-top:20px;
+    width:100%;
+}
+
+.left-bar{
+    display:flex;
+    flex-direction:column;
+    background-color:rgb(68, 68, 146);
+    gap:0.5rem;
+    border-radius:5px;
+}
+
+.left-bar1{
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+    background-color:rgb(5, 5, 85);
+    border-radius:5px;
+    padding:5px;
+}
+.left-bar1 .year-title{
+    display:flex;
+    justify-content:space-between;
+}
+.left-bar1 .years{
+    display:flex;
+    flex-direction:column;
+    margin:10px;
+}
+.left-bar1 .years .year{
+    background-color:rgba(240, 15, 64, 0.8);
+    padding:5px;
+    margin:1px;
+    border-radius:4px;
+    font-size:15px;
+    padding-right:1rem;
+    justify-content:flex-start;
+}
+
+.left-bar .left-bar2{
+    background-color:rgb(5, 5, 85);
+    border-radius:5px;
+    padding:10px;
+    
+}
+.left-bar .left-bar2 .year-title{
+    display:flex;
+    justify-content:space-between;
+}
+.left-bar .left-bar2 .items{
+    display:flex;
+    flex-direction:column;
+    margin:10px;
+}
+
+.left-bar .left-bar2 .items .item{
+    background-color:rgba(240, 15, 64, 0.8);
+    padding:5px;
+    margin:1px;
+    border-radius:4px;
+    font-size:15px;
+    padding-right:1rem;
+    justify-content:flex-start;
+}
+
+.circular{
+    height:80px;
+    width:80px;
+    border-radius:60%;
+    background-color:rgb(5, 5, 85);
+    justify-content:center;
+    align-items:center;
+    padding:18px;
+    margin-top:1rem;
+}
+
+.center-bar{
+display:flex;
+background-color:rgb(68, 68, 146);
+border-radius:5px;
+flex-direction:column;
+gap:1rem;
+padding:20px;
+width:100%;
+}
+
+.center-bar .center-up{
+    display:flex;
+    justify-content:space-around;
+    background-color:rgb(73, 73, 170);
+    padding:20px;
+}
+
+.center-bar .center-up .center-bar1{
+    background-color:rgb(5, 5, 85);
+    padding:20px;
+    margin-top:10px;
+    border-radius:5px;
+}
+
+.center-bar .center-center{
+    display:flex;
+    background-color:rgb(73, 73, 170);
+    height:10rem;
+    margin-top:10px;
+    border-radius:5px;
+    padding:10px;
+    width:100%;
+    gap:1rem;
+}
+.center-bar .center-center .item1{
+    margin:10px;
+   border:1px solid red;
+   background-color:rgb(5, 5, 85);
+   padding:20px;
+   border-radius:5px;
+   display:flex;
+   flex-direction:column;
+   gap:1rem;
+}
+
+.center-bar .center-center .item1 .heading{
+    display:flex;
+    gap:1rem;
+}
+
+.center-bar .center-center .item1 .content{
+    background-color:rgba(240, 15, 64, 0.8);
+    border-radius:4px;
+    font-size:15px;
+    padding-right:1rem;
+    justify-content:center;
+    padding:5px;
+    
+}
+
+.center-bar .center-down{
+    display:flex;
+    gap:2%;
+    background-color:rgb(52, 52, 97);
+    height:100%;
+    margin-top:10px;
+    border-radius:5px;
+    /* width:100%; */
+}
+
+.center-bar .center-down .item1{
+    background-color:rgb(5, 5, 85);
+    padding:10px;
+    width:70%;
+    border-radius:5px;
+    justify-content:center;
+}
+
+.center-bar .center-down .item2{
+    background-color:rgb(5, 5, 85);
+    width:28% ;
+    border-radius:5px;
+    padding:10px;
+    justify-content:center;
+}
+.right-bar{
+display:flex;
+padding:10px;
+background-color:rgb(68, 68, 146);
+flex-direction:column;
+gap:2rem;
+width:30%;
+}
+.right-bar .item1{
+    background-color:rgb(5, 5, 85); 
+    height:18rem;
+}
+
+.right-bar .item2{
+    background-color:rgb(5, 5, 85); 
+    height:20rem;
+}
+
+

@@ -5,6 +5,12 @@ mongoose.connect("mongodb://localhost:27017/autoDB", {
   useUnifiedTopology: true
 });
 
+const userCredentialSchema = {
+	username:String,
+	password:String,
+}
+
+
 const farmerDetailsSchema = {
     firstName: String,
     lastName: String,
@@ -16,6 +22,8 @@ const farmerDetailsSchema = {
 
   };
 
+
+  const UserCredentials = mongoose.model("users",userCredentialSchema);
   const FarmerDetails = mongoose.model("farmerDetails", farmerDetailsSchema);
 
-  module.exports = FarmerDetails;
+  module.exports = {FarmerDetails,UserCredentials};
